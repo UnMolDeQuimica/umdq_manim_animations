@@ -37,7 +37,7 @@ La radiación UVC es la más peligrosa, pero por suerte la capa de ozono absorbe
 3. Cuando hablemos de los daños de la RUV el gráfico va a la derecha y a la izquierda se listan varios problemas que causa.
 
 
-## Escena 4
+## Escena 3
 
 ### Texto
 
@@ -50,6 +50,9 @@ Los fotoprotectores se clasifican en inorgánicos particulados y en orgánicos. 
 * Oxybenzonas
 * Salicilatos
 * Dibenzoilmetanos
+* Triazinas
+* Benzotriazoles
+* Alcanfores
 * Óxidos inorgánicos
 * Otros
 
@@ -64,7 +67,7 @@ Esta clasificación viene de las moléculas base que originan a las demás. Si t
 5. Remarcar en color las zonas que son idénticas y luego las zonas que son distintas para cada molécula y su molécula base. 
 
 
-## Escena 5
+## Escena 4
 
 ### Texto
 Independientemente de su estructura, la mayoría de fotoprotectores absorber la RUV para proteger nuestra piel. ¿Como funciona eso?
@@ -79,7 +82,7 @@ Comencemos con un átomo. Esta es la representación de Bohr de un átomo y, aun
 4. Electrón sube al recibir un fotón y baja al emitirlo en bucle
 
 
-## Escena 6
+## Escena 5
 
 ### Texto
 En las moléculas tenemos átomos unidos entre sí mediante enlaces. Estos enlaces se pueden entender como una versión extendida de los orbitales atómicos en las que en lugar de uno hay dos o más núcleos atómicos. Además, podemos encadenar, o mejor dicho, conjugar estos orbitales para producir orbitales moleculares de una energía específica. Por ejemplo, el beta-caroteno tiene un sistema conjugado que cae en el rango de la luz naranja, lo cual le da su característico color a las zanahorias.
@@ -95,7 +98,7 @@ Los fotoprotectores usan sistemas conjugados para conseguir que la energía de s
 5. Lo mismo pero con la Avobenzona. 
 
 
-## Escena 7
+## Escena 6
 
 ### Texto
 
