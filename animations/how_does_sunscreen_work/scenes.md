@@ -50,9 +50,6 @@ Los fotoprotectores se clasifican en inorgánicos particulados y en orgánicos. 
 * Oxybenzonas
 * Salicilatos
 * Dibenzoilmetanos
-* Triazinas
-* Benzotriazoles
-* Alcanfores
 * Óxidos inorgánicos
 * Otros
 
@@ -109,3 +106,54 @@ Bueno, ese es uno de los mecanismos de pérdida de energía, pero hay más. Por 
 La mayoría de fotoprotectores utiliza un mecanismo conocido como relajación vibracional, consistente en disipar la energía absorbida en forma de energía térmica.
 
 ### Desarrollo
+
+
+## Escena 7
+
+### Texto
+
+Por mucho que podamos ajustar una molécula para que absorba RUV, será incapaz de absorber todo el espectro UV al 100%. Por ejemplo, uno de los componentes principales de la mayoría de cremas solares llamado avobenzona, tiene su máximo de absorción cerca de los 365 nm, lo cual la convierte en un gran protector contra la RUVA, pero poco útil en la región del UVB. Por el contrario, el octocrileno tiene una gran protección en la zona del UVB, pero es flojucho en la zona del UVA.
+
+Lo que sí podemos hacer es combinar distintas moléculas con distintos rangos de absorción dentro de una misma formulación de crema solar para intentar cubrir el máximo espectro posible.
+
+Existen otros factores a considerar, como su solubilidad en agua y en aceites, su color, su textura, si mancha la ropa, su tendencia a causar alergia e incluso el coste de los ingredientes. Al fin y al cabo, es un producto cosmético y tiene que hacer bonito.
+
+### Desarrollo
+
+
+## Escena 8
+
+### Texto
+
+Ahora que sabes de qué están hechas las cremas solares y como absorben la RUV, queda una pregunta pendiente. ¿Qué es ese número que suele venir en grande y que le viene tan bien a la gente de marketing?
+
+Ese número es el Factor de Protección Solar o SPF por sus siglas en inglés (Sun Protection Factor) y representa la cantidad de RUV requerida para producir un eritrema (una quemadura, vamos) cuando llevamos crema dividido entre la cantidad de RUV requerida para producir un eritrema cuando no llevamos crema.
+
+Una SPF de 1 es equivalente a no tener crema solar o a usar una crema solar que no protege nada. Una SPF de 50 significa que necesitamos 50 veces más RUV para quemarnos en comparación a cuando no llevamos crema.
+
+### Desarrollo
+
+
+
+## Escena 9
+
+### Texto
+
+Visto así, parece evidente que a mayor SPF, mejor protección, pero hay expertos que dudan de la eficacia de este indicador para medir la capacidad de protección de una crema solar, especialmente porque no tiene en cuenta de forma adecuada el tiempo de exposición al Sol y que no distingue los efectos de la radiación UVA de los de la UVB. Otra razón es que requiere de repartir de forma uniforme 2 mg de fotoprotector por centímetro cuadrado, cosa que no parece sencilla ni viable en la práctica. A cambio, proponen otros indicadores como el IPF, que mide el nivel de protección al sistema inmune, afectado por la RUV; el iSPF, que mide la generación de radicales libres generados por la RUV causantes de la mayor parte del daño a nuestro cuerpo; o el RSF que directamente determina los daños causados por los radicales libres.
+
+### Desarrollo
+
+
+
+## Escena 10
+
+### Texto
+
+El SPF no es el único aspecto controvertido del uso de las cremas solares. Hay investigadores que señalan que el uso de cremas solares no reduce significativamente la incidencia de cáncer de piel, por lo que proponen incentivar alternativas como el uso de ropa fotoprotectora, estar bajo la sombra siempre que se pueda y evitar estar al Sol al mediodía cuando la cantidad de radiación recibida es mayor.
+
+Por si acaso, desde Un Mol De Química te recomiendo lo habitual: Bebe agua cada poco tiempo, no te metas al mar justo después de comer, ponte crema solar, dale a like, comparte el video y suscribete para enterarte de cuando subo video, aunque estas tres últimas cosas puedes hacerlas en cualquier época del año.
+
+¡Ah! Y por chunga que sea la RUV, es importante recibir aunque sea un poco para poder producir Vitamina D. ¿Te gustaría saber más sobre las vitaminas? ¿O prefieres saber de alguna otra cosa? Dímelo en un comentario. ¡Hasta pronto!
+
+### Desarrollo
+

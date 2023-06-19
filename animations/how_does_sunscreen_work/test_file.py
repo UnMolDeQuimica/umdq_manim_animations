@@ -13,9 +13,4 @@ config.background_color = COLOR_0
 
 class Test(Scene):
     def construct(self):
-        dots = [Square().move_to([i, 0, 0]) for i in range(-3,3)]
-        
-        self.play(
-            LaggedStart(*[Create(dot) for dot in dots], lag_ratio=0.5)
-        )
-    
+        pass
