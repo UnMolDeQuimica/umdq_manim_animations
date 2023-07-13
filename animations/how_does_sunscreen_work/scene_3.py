@@ -15,7 +15,6 @@ config.background_color = COLOR_0
 class Photoprotectors(Scene):
     def construct(self):
         organic_traditional = MarkupText("<span underline='double'>Orgánicos tradicionales</span>").scale(0.5).shift(3.5*UP)
-        traditional_rectangle = Rectangle(width=13.7, height=5.5, stroke_width=3).shift(1.1*UP)
         
         organic_particulated = MarkupText("<span underline='double'>Orgánicos particulados</span>").scale(0.5).shift(2*DOWN)
         organic_polimeric = MarkupText("<span underline='double'>Orgánicos poliméricos</span>").scale(0.5).shift(2*DOWN+5*LEFT)
@@ -111,7 +110,7 @@ class Photoprotectors(Scene):
         
         self.wait()
         
-        self.play(LaggedStart(*[Write(molecule) for molecule in molecules_list]), lag_ratio=0.5, run_time=4)
+        self.play(LaggedStart(*[Write(molecule) for molecule in molecules_list]), lag_ratio=0.5, run_time=11)
         
         self.wait()
         
@@ -205,7 +204,7 @@ class Photoprotectors(Scene):
                 uvinil_a_plus.animate.set_color(MAROON_A).move_to([-0.2, 0, 0]),
                 bisoctrizole.animate.set_color(MAROON_A).move_to([-1.5, 0.5, 0]),
                 lag_ratio=0.1,
-                run_time=4
+                run_time=10
             )
         )
         
@@ -224,4 +223,8 @@ class Photoprotectors(Scene):
             FadeIn(polímeros),
             FadeIn(otros)
         )
+        self.wait(10)
+        
+        self.play(FadeOut(Group(*self.mobjects)))
+        
         self.wait()

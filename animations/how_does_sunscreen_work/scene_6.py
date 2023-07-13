@@ -25,6 +25,7 @@ o la fosforescencia, utilizada habitualmente en las señales de salida de emerge
 La mayoría de fotoprotectores utiliza un mecanismo conocido como relajación vibracional, consistente en disipar la energía absorbida en forma de energía térmica.
 """
 
+config.background_color = COLOR_0
 
 class Photoreactions(Scene):
     def photon_collision(self, dot, final_position, color=None):

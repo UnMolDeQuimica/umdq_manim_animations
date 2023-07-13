@@ -72,11 +72,12 @@ class SunData(Scene):
             stroke_width=1
         )["line_graph"]
         
+        self.wait()
         
-        self.play(Create(big_axis), run_time=1.5)
-        self.play(Create(etr_data), run_time=3)
+        self.play(Create(big_axis), run_time=2)
+        self.play(Create(etr_data), run_time=5)
         
-        self.wait(2)
+        self.wait(0.5)
         
 
         def get_intersection_updater(no_added_mob, background, gradient, gradient_index):
@@ -89,21 +90,21 @@ class SunData(Scene):
         infrared_rectangle = VMobject().add_updater(get_intersection_updater(infrared_region, infrared_mask, [RED, RED_C, RED_B, RED_A], 4))
         
         self.add(infrared_rectangle)
-        self.play(infrared_mask.animate.shift(infrared_region.get_width()*RIGHT), run_time=4)
+        self.play(infrared_mask.animate.shift(infrared_region.get_width()*RIGHT), run_time=3)
         
-        self.wait()
+        self.wait(0.5)
         self.play(infrared_mask.animate.shift((infrared_region.get_width()+1)*LEFT), run_time=2)
         
-        self.wait()
+        self.wait(0.5)
         
         
         self.play(
            ReplacementTransform(big_axis, small_axis),
            ReplacementTransform(etr_data, etr_data_small),
-           run_time=3
+           run_time=1.5
         )
         
-        self.wait()
+        self.wait(0.5)
         
         visible_region = Rectangle(width=7.2, height=6).shift(1.2*RIGHT)
         visible_mask = Square().scale(10).set_opacity(0).next_to(visible_region, LEFT, buff=0)
@@ -111,29 +112,29 @@ class SunData(Scene):
         
         
         self.add(visible_rectangle)
-        self.play(visible_mask.animate.shift(visible_region.get_width()*RIGHT), run_time=4)
+        self.play(visible_mask.animate.shift(visible_region.get_width()*RIGHT), run_time=3)
         
-        self.wait()
+        self.wait(0.5)
         self.play(visible_mask.animate.shift((visible_region.get_width()+1)*LEFT), run_time=2)
         
-        self.wait()
+        self.wait(0.5)
         
         self.play(
             ReplacementTransform(small_axis, uv_axis),
             ReplacementTransform(etr_data_small, direct_uv_data),
-            run_time=3
+            run_time=1.5
         )
         
-        self.wait()
+        self.wait(0.5)
         
         uv_region = Rectangle(width=12, height=6)
         uv_mask = Square().scale(10).set_opacity(0).next_to(uv_region, LEFT, buff=0)
         uv_rectangle = VMobject().add_updater(get_intersection_updater(uv_region, uv_mask, [BLACK, PURPLE_E, PURPLE_D, PURPLE_C], 4))
         
         self.add(uv_rectangle)
-        self.play(uv_mask.animate.shift(uv_region.get_width()*RIGHT), run_time=4)
+        self.play(uv_mask.animate.shift(uv_region.get_width()*RIGHT), run_time=2)
         
-        self.wait()
+        self.wait(0.5)
         
         uva_rectangle = Rectangle(width=3.2, height=6).shift(4.4*RIGHT)
         uvb_rectangle = Rectangle(width=1.6, height=6).shift(2*RIGHT)
@@ -147,20 +148,27 @@ class SunData(Scene):
         uvb = Text("UVB", stroke_color=COLOR_0, stroke_width=1, fill_opacity=1, fill_color=LIGHT_PINK).scale(0.8).move_to([2.1, -2, 0])
         uvc = Text("UVC", stroke_color=COLOR_0, stroke_width=1, fill_opacity=1, fill_color=LIGHT_PINK).scale(0.8).move_to([-0.5, -2, 0])
         
+        self.wait(2)
         self.play(
-            AnimationGroup(
-                FadeIn(uva_inter),
-                FadeIn(uvb_inter),
-                FadeIn(uvc_inter),
-            ),
-            AnimationGroup(
-                FadeIn(uva),
-                FadeIn(uvb),
-                FadeIn(uvc),
-            )
+            FadeIn(uva_inter),
+            FadeIn(uva)
         )
         
-        self.wait()
+        self.wait(2)
+        
+        self.play(
+            FadeIn(uvb_inter),
+            FadeIn(uvb)
+        )
+        
+        self.wait(2)
+        
+        self.play(
+            FadeIn(uvc_inter),
+            FadeIn(uvc)
+        )
+
+        self.wait(2)
         
         self.play(
             FadeOut(uva),
@@ -173,15 +181,30 @@ class SunData(Scene):
             FadeOut(uvc_inter),
         )
         
-        self.play(uv_mask.animate.shift((uv_region.get_width()+1)*LEFT), run_time=2)
+        self.play(uv_mask.animate.shift((uv_region.get_width()+1)*LEFT), run_time=1.5)
         self.wait()
         
         self.play(
             ReplacementTransform(uv_axis, big_axis2),
             ReplacementTransform(direct_uv_data, etr_data2),
-            run_time=3
+            run_time=1.5
         )
         
-        self.play(Create(direct_solar_data), run_time=3)
+        self.play(Create(direct_solar_data), run_time=1.5)
+        
+        
+        atmosphere_radiation = Text("Radiación que llega a las capas altas de la atmósfera", color=COLOR_C, font="Reem Kufi").scale(0.65).move_to([2, 2, 0])
+        surphace_radiation = Text("Radiación que llega a la superficie terrestre", color=COLOR_D, font="Reem Kufi").scale(0.65).move_to([1.1, 1, 0])
         
         self.wait()
+        self.play(
+            FadeIn(atmosphere_radiation),
+            FadeIn(surphace_radiation),
+        )
+        self.wait(15)
+        
+        self.play(
+            FadeOut(Group(*self.mobjects))
+        )
+        
+        self.wait(2)

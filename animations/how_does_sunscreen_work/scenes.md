@@ -139,7 +139,7 @@ Una SPF de 1 es equivalente a no tener crema solar o a usar una crema solar que 
 
 ### Texto
 
-Visto así, parece evidente que a mayor SPF, mejor protección, pero hay expertos que dudan de la eficacia de este indicador para medir la capacidad de protección de una crema solar, especialmente porque no tiene en cuenta de forma adecuada el tiempo de exposición al Sol y que no distingue los efectos de la radiación UVA de los de la UVB. Otra razón es que requiere de repartir de forma uniforme 2 mg de fotoprotector por centímetro cuadrado, cosa que no parece sencilla ni viable en la práctica. A cambio, proponen otros indicadores como el IPF, que mide el nivel de protección al sistema inmune, afectado por la RUV; el iSPF, que mide la generación de radicales libres generados por la RUV causantes de la mayor parte del daño a nuestro cuerpo; o el RSF que directamente determina los daños causados por los radicales libres.
+Visto así, parece evidente que a mayor SPF, mejor protección, pero hay expertos que dudan de la eficacia de este indicador para medir la capacidad de protección de una crema solar, especialmente porque no tiene en cuenta de forma adecuada el tiempo de exposición al Sol y que no distingue los efectos de la radiación UVA de los de la UVB. Otra razón es que requiere de repartir de forma uniforme 2 mg de fotoprotector por centímetro cuadrado y que esta se mantenga en el tiempo, cosa que no parece habitual en la práctica. A cambio, proponen otros indicadores como el IPF, que mide el nivel de protección al sistema inmune, afectado por la RUV; el iSPF, que mide la generación de radicales libres generados por la RUV causantes de la mayor parte del daño a nuestro cuerpo; o el RSF que directamente determina los daños causados por los radicales libres.
 
 ### Desarrollo
 
@@ -151,7 +151,7 @@ Visto así, parece evidente que a mayor SPF, mejor protección, pero hay experto
 
 El SPF no es el único aspecto controvertido del uso de las cremas solares. Hay investigadores que señalan que el uso de cremas solares no reduce significativamente la incidencia de cáncer de piel, por lo que proponen incentivar alternativas como el uso de ropa fotoprotectora, estar bajo la sombra siempre que se pueda y evitar estar al Sol al mediodía cuando la cantidad de radiación recibida es mayor.
 
-Por si acaso, desde Un Mol De Química te recomiendo lo habitual: Bebe agua cada poco tiempo, no te metas al mar justo después de comer, ponte crema solar, dale a like, comparte el video y suscribete para enterarte de cuando subo video, aunque estas tres últimas cosas puedes hacerlas en cualquier época del año.
+Por si acaso, desde Un Mol De Química te recomiendo lo habitual: Bebe agua cada poco tiempo, no la tomes muy fría, no te metas al mar justo después de comer, no corras cerca de la piscina, ponte crema solar, dale a like, comparte el video y suscribete para enterarte de cuando subo video, aunque estas tres últimas cosas puedes hacerlas en cualquier época del año.
 
 ¡Ah! Y por chunga que sea la RUV, es importante recibir aunque sea un poco para poder producir Vitamina D. ¿Te gustaría saber más sobre las vitaminas? ¿O prefieres saber de alguna otra cosa? Dímelo en un comentario. ¡Hasta pronto!
 

@@ -18,6 +18,9 @@ class AtomicOrbitals(Scene):
         bohr_atom = BohrAtom(e = 6, p = 6, n=6, level=3, orbit_color=COLOR_GRAY, neutron_color=COLOR_GRAY, proton_color=COLOR_A, electron_color=COLOR_F)
         
         electrons = bohr_atom.get_electrons()
+        
+        nuclei = bohr_atom.get_nuclei()
+        
         moving_electron = electrons[1][1]
         photon = Dot(color=YELLOW).scale(0.5).move_to([-12, 6, 0])
         
@@ -30,10 +33,18 @@ class AtomicOrbitals(Scene):
             run_time=3
         )
         self.play(Rotate(electrons, -0.1), run_time=0.5)
-        self.play(Rotate(electrons, 4*PI+0.1), run_time=8, rate_func=ease_in_out_sine)
+        self.play(Rotate(electrons, 4*PI+0.1), run_time=7, rate_func=ease_in_out_sine)
         
+        self.wait(0.5)
+        
+        self.play(Indicate(nuclei))
         
         self.wait()
+        
+        self.play(Rotate(electrons, -0.1), run_time=0.5)
+        self.play(Rotate(electrons, 8*PI+0.1), run_time=14, rate_func=ease_in_out_sine)
+        
+        self.wait(2)
 
         self.play(photon.animate.move_to(moving_electron.get_center()))
         self.play(Flash(moving_electron), Indicate(moving_electron), FadeOut(photon))
@@ -47,4 +58,4 @@ class AtomicOrbitals(Scene):
         self.add(new_trace)
         self.play(photon.animate.move_to([10, 6, 0]), moving_electron.animate.shift(DOWN))
         
-        self.wait()
+        self.wait(2)

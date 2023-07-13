@@ -48,22 +48,24 @@ class MolecularOrbitals(ThreeDScene):
             FadeIn(h2_3d)
         )
         
-        self.wait()
+        self.wait(2)
         
         self.play(FadeIn(sigma_bonding))
         
-        self.wait()
+        self.wait(2)
         
-        self.play(ReplacementTransform(sigma_bonding, sigma_antibonding))
+        self.play(ReplacementTransform(sigma_bonding, sigma_antibonding), run_time=2)
         
         
-        self.wait()
+        self.wait(2)
         
-        self.play(FadeOut(sigma_antibonding), FadeOut(h2_3d))
+        self.play(FadeOut(sigma_antibonding), FadeOut(h2_3d), run_time=2)
         
-        self.wait()
+        self.wait(0.5)
         
-        self.play(FadeIn(b_carotene))
+        # 14.5 seconds
+        
+        self.play(Create(b_carotene), run_time=3)
         
         orbital_base = Orbital(l=1, m=0).scale(0.5)
         orbital_1 = orbital_base.copy().move_to([-0.2, -0.05, 0])
@@ -89,7 +91,7 @@ class MolecularOrbitals(ThreeDScene):
         orbital_21 = orbital_base.copy().move_to([5.12, 0.15, 0])
         orbital_22 = orbital_base.copy().move_to([5.1, -0.7, 0])
         
-        self.wait()
+        self.wait(2)
         
         self.play(
             FadeIn(orbital_1),
@@ -113,16 +115,19 @@ class MolecularOrbitals(ThreeDScene):
             FadeIn(orbital_19),
             FadeIn(orbital_20),
             FadeIn(orbital_21),
-            FadeIn(orbital_22)
+            FadeIn(orbital_22),
+            run_time=3
         )
 
         self.wait()
         
-        self.move_camera(phi=90 * DEGREES)
+        self.move_camera(phi=90 * DEGREES, run_time = 2)
         
         self.wait()
         
-        self.move_camera(phi=0 * DEGREES)
+        self.move_camera(phi=0, run_time=2)
+        
+        self.wait()
         
         self.play(
             FadeOut(b_carotene),
@@ -150,11 +155,12 @@ class MolecularOrbitals(ThreeDScene):
             FadeOut(orbital_22)
         )
         
+        # 10 seconds more, 30.5
         avobenzone_3d = ThreeDMolecule.from_mol_file("molecules/avobenzone_3d.mol", source_csv="Elementos.csv").rotate(-30*DEGREES).scale(0.75).shift(DOWN)
         
         self.wait()
         
-        self.play(FadeIn(avobenzone_3d))
+        self.play(FadeIn(avobenzone_3d), run_time=2)
         
         av_orbital_1 = orbital_base.copy().move_to([-1, 0.8, 0])
         av_orbital_2 = orbital_base.copy().move_to([-1.95, 0.25, 0])
@@ -187,15 +193,19 @@ class MolecularOrbitals(ThreeDScene):
             FadeIn(av_orbital_11),
             FadeIn(av_orbital_12),
             FadeIn(av_orbital_13),
-            FadeIn(av_orbital_14)
+            FadeIn(av_orbital_14),
+            run_time=2
         )
         
         self.wait()
         
-        self.move_camera(phi=90 * DEGREES)
+        self.move_camera(phi=90 * DEGREES, run_time=1.5)
         
         self.wait()
         
-        self.move_camera(phi=0 * DEGREES)
+        self.move_camera(phi=0, run_time=1.5)
+        # 12 seconds more, 41.5
         
-        self.wait()
+        self.wait(2)
+        
+        

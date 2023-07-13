@@ -28,7 +28,12 @@ class AbsortionLevels(Scene):
             tips=False,
             color=COLOR_GRAY
         ).scale(0.9).shift(0.5*DOWN)
-
+        
+        uva_rect = Rectangle(height=5.5, width=8, fill_opacity=0.5, stroke_width=0, color=COLOR_E).shift(0.48*DOWN+1.39*RIGHT)
+        uvb_rect = Rectangle(height=5.5, width=2.8, fill_opacity=0.5, stroke_width=0, color=COLOR_A).shift(0.48*DOWN+4*LEFT)
+        
+        uva_text = Text("UVA", font="Reem Kufi", color=COLOR_E).next_to(uva_rect, UP, buff=0.5)
+        uvb_text = Text("UVB", font="Reem Kufi", color=COLOR_A).next_to(uvb_rect, UP, buff=0.5)
         avobenzone = uv_axis.plot_line_graph(
             x_values=wl,
             y_values=avobenzone_data,
@@ -83,17 +88,30 @@ class AbsortionLevels(Scene):
         self.wait()
         self.play(Create(uv_axis), run_time=1.5)
         self.wait()
-        self.play(Create(avobenzone), Write(avobenzone_name), run_time=2)
-        self.wait(0.5)
-        self.play(Create(avobenzone_line))
-        self.wait(2)
-        self.play(Uncreate(avobenzone_line))
+        self.play(FadeIn(uva_rect), FadeIn(uvb_rect), run_time=1.5)
         self.wait()
+        self.play(
+            Write(uva_text),
+            Write(uvb_text),
+            run_time=1.5
+        )
+        self.wait(2)
+        self.play(
+            Unwrite(uva_text),
+            Unwrite(uvb_text),
+        )
+        self.wait()
+        self.play(Create(avobenzone), Write(avobenzone_name), run_time=2)
+        self.wait(1)
+        self.play(Create(avobenzone_line), run_time=2)
+        self.wait(3.5)
+        self.play(Uncreate(avobenzone_line), run_time=2)
+        self.wait(3)
         self.play(Create(octocrylene), Write(octocrylene_name), run_time=2)
         self.wait(0.5)
-        self.play(Create(octocrylene_line))
+        self.play(Create(octocrylene_line), run_time=2)
         self.wait(2)
-        self.play(Uncreate(octocrylene_line))
+        self.play(Uncreate(octocrylene_line), run_time=2)
         self.wait()
         self.play(Create(ecamsule), Write(ecamsule_name), run_time=2)
         self.wait(0.5)
@@ -105,6 +123,7 @@ class AbsortionLevels(Scene):
         self.play(Create(all_plot), run_time=4, rate_func=linear)
         names_group = VGroup(avobenzone_name, octocrylene_name, ecamsule_name)
         
+        self.wait()
         self.play(Transform(names_group, all_text))
         
         self.wait(2)
